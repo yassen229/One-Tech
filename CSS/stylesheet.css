@@ -1,0 +1,1063 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{  
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ============= global selectors =============*/
+
+.heading{
+    /* text-align: center; */
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h2{
+    padding-left: 0;
+    font-size: 2.25rem;
+    color: #09c;
+}
+
+.search-bar{
+    width: 40%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input{
+    width: 70%;
+    height: 100%;
+    border: 2px solid rgba(0, 0 , 0, 0.25) ;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.search-bar select{
+    width: 30%;
+    height: 105%;
+    border: 2px solid rgba(0, 0 , 0, 0.25) ;
+    border-radius: 3px;
+    margin-left: -1px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 0 8px 0;
+    height: 100%;
+    text-align: center;
+}
+
+.icon p{
+    font-size: 16px;
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+.fa-magnifying-glass{
+    margin: -1px 0 0 -2px ;
+    align-items: center;
+    padding: 18px;
+    border-radius: 6px;  
+    color: white;
+    background-color: #09c;
+    position: absolute;
+    bottom: -1%;
+    left: 100%;
+}
+
+.opts{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.whishlist,
+.cart-1{
+    display: flex;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.info{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.info span{
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+.categories{
+    color: white;
+    padding: 10px 0;
+    margin: -1px 0 0;
+    height: 40px;
+    background-color:#09c;
+    position: sticky ;
+    top: 0;
+    z-index: 9999999999;
+}
+
+
+.categories .icon{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .icon .fa-bars{
+    width: 100%;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.fa-chevron-down{
+    font-size: 14px;
+    padding: 3px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav .bar{
+    font-size: 18px;
+    padding: 10px;
+    display: none;
+}
+
+@media screen and (max-width:1036px){
+    .heading .whishlist{
+        display: none; 
+    }
+}
+
+@media screen and (max-width:986px){
+    nav{
+        justify-content: space-around;
+    }
+    .heading{
+        justify-content: space-around;
+    }
+    nav ul, 
+    .cart{
+        display: none;
+    }
+    nav .bar{
+        display: block;
+    }
+    .search-bar{
+        display: none;
+    }
+    .headin .icon{
+        margin-left: -200px;
+    }
+}
+
+/* end of the header */
+
+/*======================= start of the main =========================== */
+
+/*         =========== start of the first section ================             */
+.first-sec{
+    background-image: url(../resources/needs/back-ground1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices{
+    width: 40%;
+}
+
+.prices h1{
+    font-size: 65px;
+    padding: 45px 0px ;
+}
+
+.prices del,
+.prices span{
+    font-size: 28px;
+    font-weight: 600;
+}
+.prices span{
+    padding: 10px;
+    color: red;
+}
+
+.prices p{
+    font-weight: 700;
+    padding-bottom: 20px ;
+    padding-top: 10px;
+}
+
+.prices button{
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #09c;
+    color: white;
+    border-radius: 3px;
+}
+
+.image{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: skyblue; */
+}
+
+
+.image img {
+    margin-left: 50px ;
+    padding: 40px ;
+    width: 80%;
+}
+
+@media screen and (max-width:1162px){
+    .inner{
+        flex-wrap: wrap;
+    }
+    .prices{
+        width: 100%;
+    }
+}
+
+/*================== end of the first section ================= */
+
+/* =============== start of the second section ============= */
+
+
+/* start of the details section */
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.details p {
+    font-weight: 600;
+}
+
+.det{
+    width: 22%;
+    border: rgba(0, 0, 0, 0.1) solid 2px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.det div{
+    padding: 0px 10px ;
+}
+
+.details .det .from{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    /* padding-left: 10px; */
+}
+
+@media screen and (max-width:986px){
+    .details{
+        flex-flow: column;
+    }
+    .det{
+        width: 100%;
+        justify-content: start;
+        margin: 20px 0;
+    }
+}
+
+/* end of the details section */
+
+/* start of the goods section */
+
+.goods{
+    display: flex;
+}
+
+.goods aside{
+    width: 30%;
+    border: 2px rgba(0, 0, 0, 0.1) solid;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+}
+
+aside h3{
+    padding: 25px;
+}
+
+aside .type{
+    color: rgba(0, 0 , 0, 0.45);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+aside .mark{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+aside .mark span{
+    color: #dc3545;
+}
+
+aside .aval{
+    color: rgba(0, 0 , 0, 0.45);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+aside .bar{
+    margin-left:5% ;
+    height: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    width: 90%;
+}
+
+.bar .filled{
+    height: 10px;
+    border-radius: 6px;
+    background-color: #09c;
+    width: 26%;
+}
+
+.end-date{
+    padding: 20px 20px;
+    font-weight: 700;
+}
+
+.date{
+    /* padding: 10px ; */
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+.date span{
+    font-weight: 800;
+    color: black;
+}
+
+.inner-aside{
+    padding: 15px 0;
+}
+
+.goods section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 69%;
+    align-content:space-between ;
+    margin: 10px;
+}
+
+.goods section .secs{
+    width: 100%;    
+}
+section .secs button{
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+}
+.sell{
+    width: 24%;
+    border-right: rgba(0, 0, 0, 0.2) solid 1px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+    margin: 10px 0;
+}
+.sell img{
+    /* height: 60%; */
+    width: 45%;
+}
+
+.sell span{
+    color: rgba(0, 0 , 0, 0.45);
+    font-size: 14px;
+    padding: 5px;
+}
+
+.sell p{
+    padding-top: 10px;
+}
+
+/*.sell*/ .sale{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #dc3545;
+    border: 5px solid #dc3545;
+    border-radius: 100%;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+
+/* .sell */ .sale p{ 
+    padding: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+/*.sell*/ .new{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #09c;
+    border: 5px solid #09c;
+    border-radius: 100%;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+
+/*.sell*/ .new p{
+    padding: 8px;
+    color: white;
+    font-size: 11px;
+}
+
+.sell .cart{
+    background-color: #09c;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #09c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ;
+}
+
+.sell .cart p{
+    padding: 8px;
+}
+
+.sell:hover{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    /* transition: 5s ; */
+}
+
+.sell:hover .cart{
+    opacity: 1;
+}
+
+
+@media screen and (max-width:986px){
+    .goods{
+        flex-flow: column;
+    }
+    .goods aside{
+        width: 100%;
+        justify-content: center;
+    }
+    .goods .inner-aside{
+        text-align: center;
+    }
+    .goods section{
+        width: 100%;
+    }
+}
+
+/*================= end of the second section ================== */
+
+/* ================ start of the third section ================= */
+
+.third-sec{
+    display: flex ;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.title button{
+    padding: 10px;
+    background-color: #09c;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.cat-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.cat-list .cat{
+    width: 24%;
+    margin: 0 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.69);
+}
+
+.cat p{
+    padding: 5px 0;
+}
+
+.third-landing{
+    width: 100%;
+    background-image: url(../resources/needs/xbanner_2_background.jpg.pagespeed.ic.4E_HslFvB8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-landing{
+    padding: 20px;
+}
+
+.right-landing img{
+    width: 85%;
+    padding-bottom: 45px;
+}
+
+.left-landing span{
+    display: block;
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.left-landing h1{
+    padding: 15px 0;
+}
+
+.left-landing p{
+    color: rgba(0, 0 , 0, 0.45);
+    padding: 10px 0;
+}
+
+.left-landing button{
+    padding: 10px;
+    background-color: #09c;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 18;
+    font-weight: 600;
+}
+
+@media screen and (max-width:986px){
+    .cat-list{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .inner-third{
+        flex-wrap: wrap;
+    }
+
+    .left-landing{
+        width: 100%;
+    }
+    .right-landing{
+        width: 100%
+    }
+}
+
+/*=================== end of the third section ================= */
+
+/*===================== start of the fourth section ===================== */
+.fourth-sec{
+    padding: 35px 0;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px rgba(0, 0 , 0, 0.25) solid;
+}
+
+.upper h1{
+    padding: 15px 0;
+}
+
+.departs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.departs button{
+    padding: 10px;
+    border: 0;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.second-goods{
+    display: flex;
+}
+
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    width: 69%;
+    align-content:space-between ;
+    margin: 10px;
+}
+
+.big-sell{
+    position: relative;
+    padding: 25px 0;
+}
+
+
+.big-sell img{
+    margin: 25px;
+    width: 100%;
+}
+
+.big-sell .cart{
+    background-color: #09c;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #09c;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 7px 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-sell span{
+    color: rgba(0, 0 , 0, 0.45);
+    text-align: left;
+    padding: 3px 0;
+}
+
+.big-sell .price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-sell .new{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #09c;
+    border: 5px solid #09c;
+    border-radius: 100%;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+
+.big-sell .new p{
+    padding: 8px;
+    color: white;
+    font-size: 11px;
+}
+
+@media screen and (max-width:986px){
+    .big-sell{
+        display: none;
+    }
+    .second-goods aside{
+        width: 100%;
+        flex-wrap:wrap ;
+    }
+    .upper{
+        flex-direction: column;
+    }
+    aside .sell{
+        width: 45%;
+    }
+}
+ /*============ end of fourth section ============= */
+
+ /* ============= start of fifth section ============== */
+
+.fifth-sec{
+    background-color: #eff6fa;
+}
+
+.fifth-sec .upper button{
+    background-color: #eff6fa;
+}
+
+.best-sells{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.best-sell *{
+    padding: 5px;
+}
+
+.best-sell{
+    width: 25%;
+    margin: 25px ;
+    display: flex;
+    background-color: white;
+    padding: 25px;
+    position: relative;
+}
+
+.best-sell span{
+    font-weight: 700;
+    color: #dc3545;
+}
+.best-sell del{
+    color: rgba(0, 0 , 0, 0.4);
+}
+.best-sell .fa-star{
+    color: gold;
+    padding: 2px;
+}
+
+.best-sell .best-type{
+    color: rgba(0, 0 , 0, 0.35);
+}
+
+.sale{
+    margin: 10px 5px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0 0 5px 0;
+}
+
+.fav{
+    left: auto;
+    right: 0 ; 
+    background-color: white;
+    border: 0;
+    padding: 10px;
+
+}
+.fav .fa-heart{
+    color: #dc3545;
+    font-size: 18px;
+}
+
+/*============== end of the section five =================== */
+
+/*============== start of trends sections ================== */
+.trendings{
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+}
+
+.trend-sell{
+    display: flex;
+    width: 30%;
+    height: min-content;
+    padding: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.trend-sell .exblan{
+    color: rgba(0, 0 , 0, 0.45);
+    padding: 10px;
+}
+
+.trend-sell .name{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px 0 0;
+}
+
+.trend21{
+    background: rgb(164 210 237 / 42%);
+}
+
+.trends-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.trend21 button{
+    background-color: white ;
+    border: 0;
+    color: rgb(164 210 237 / 42%);
+    padding: 10px;
+    border-radius: 100%;
+    height: max-content;    
+}
+
+.tr21-sell{
+    padding: 50px 25px;
+    margin: 15px;
+    background-color: white;  
+    width: 25%; 
+    text-align: center;
+    position: relative;
+}
+.tr21-sell *{
+    padding: 5px 0 0;
+}
+.tr21-sell .first{
+    color: rgba(0, 0 , 0, 0.45);
+    position: absolute;
+    font-size: 14px;
+    bottom: 12.5%;
+    left: 5%;
+}
+
+.tr21-sell div{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+}
+
+.tr21-sell img{
+    width: 100%;
+    padding: 25px 0;
+}
+
+.tr21-sell .new p{
+    padding: 5px;
+    height: 20px;
+}
+
+.latest-review .trends-bar{
+    justify-content: space-evenly;
+}
+
+.latest-review .tr21-sell{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 15%;
+    padding: 15px 0 ;
+    align-items: center;
+}
+
+.latest-review .tr21-sell img{
+    width: 70%;
+}
+
+.fa-star{
+    color: gold;
+}
+
+.el7ekaya{
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+.latest-review .tr21-sell p span{
+    font-size: 13px;
+}
+
+.bgc{
+    background-color: #eff6fa;
+}
+
+.trend21 .upper{
+    align-items: center;
+}
+
+.sale p{
+    padding: 2px;
+    height: 20px;
+}
+
+.zabt div{
+    justify-content: space-evenly;
+}
+
+.zabt .name{
+    font-weight: 700;
+}
+
+.zabt span{
+    color: #dc3545;
+}
+
+.brands-bar{
+    padding: 50px 0;
+}
+
+.img-bar{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgba(0, 0 , 0, 0.1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.img-bar button{
+    background-color: white ;
+    border: 0;
+    color:  rgba(0, 0 , 0, 0.2);
+    padding-left: 50px;
+    border-radius: 100%;
+    height: max-content;    
+}
+
+.img-bar .fa-chevron-right{
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.inner-imgbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.left-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-top p{
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+footer .right-top{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.right-top .writing{
+    width: 70%;
+    border: 2px solid rgba(0, 0 , 0, 0.1);
+    padding: 10px;
+    color: rgba(0, 0 , 0, 0.15);
+}
+
+.right-top .but{
+    width: 20%;
+    padding: 10px;
+    background-color: #09c;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+footer .base-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.base-footer .left-base {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight{
+    font-weight: 700;
+    color: #09c;
+    font-size: 17px;
+    
+}
+
+.location{
+    color: rgba(0, 0 , 0, 0.45);
+}
+
+footer i{
+    color: #09c;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.base-footer *{
+    padding: 3px;
+}
+
+footer .container *{
+    padding: 10px 0;
+}
